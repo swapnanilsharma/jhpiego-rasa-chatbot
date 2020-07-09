@@ -1,0 +1,97 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- course
+- content
+- preventive_measures
+- hygiene_practices
+- COVID19_awareness
+- protection_equipment
+- infection_control
+- health_messages
+- ppe
+responses:
+  utter_preventive_measures:
+  - text: Here is the link to view [Preventive Measures](https://mahacyber.ddns.net/explore-course?subject=Preventive%20Measures&appliedFilters=true)
+      topic.
+  utter_hygiene_practices:
+  - text: Here is the link to view [Hygiene Practices](https://mahacyber.ddns.net/explore-course?subject=Hygiene%20Practices&appliedFilters=true)
+      topic.
+  utter_COVID19_awareness:
+  - text: Here is the link to view [COVID-19 Awareness](https://mahacyber.ddns.net/explore-course?subject=COVID-19%20Awareness&appliedFilters=true)
+      topics.
+  utter_protection_equipment:
+  - text: Here is the link to view [Protection Equipment](https://mahacyber.ddns.net/explore-course?subject=Protection%20Equipment&appliedFilters=true)
+      topic.
+  utter_infection_control:
+  - text: Here is the link to view [Infection control](https://mahacyber.ddns.net/explore-course?subject=Infection%20control&appliedFilters=true)
+      topic.
+  utter_health_messages:
+  - text: Here is the link to view [Health Messages](https://mahacyber.ddns.net/explore-course?subject=Health%20Messages&appliedFilters=true)
+      topic.
+  utter_ppe:
+  - text: Here is the link to view [PPE](https://mahacyber.ddns.net/explore-course?subject=PPE&appliedFilters=true)
+      topic.
+  utter_greet:
+  - buttons:
+    - payload: /course
+      title: Course
+    - payload: /content
+      title: Content
+    text: 'Hi! What do you want to learn: '
+  utter_course:
+  - buttons:
+    - payload: /infection_control
+      title: Infection control
+    - payload: /hygiene_practices
+      title: Hygiene Practices
+    - payload: /preventive_measures
+      title: Preventive Measures
+    - payload: /protection_equipment
+      title: Protection Equipment
+    - payload: /health_messages
+      title: Health Messages
+    - payload: /COVID19_awareness
+      title: COVID-19 Awareness
+    - payload: /ppe
+      title: PPE
+    text: 'Please select topic to continue:'
+  utter_thanks:
+  - text: Thank you for connecting us. The following option is not available right
+      now
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_thanks
+- buttons
+- utter_course
+- utter_preventive_measures
+- utter_hygiene_practices
+- utter_COVID19_awareness
+- utter_protection_equipment
+- utter_infection_control
+- utter_health_messages
+- utter_ppe
